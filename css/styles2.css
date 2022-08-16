@@ -1,0 +1,528 @@
+/* Reseteo CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+h1{
+    font-size: 35px;
+    text-shadow: 0.5px 0.5px white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+h2{
+    color: red;
+    font-size: 30px;
+    padding: 10px;
+    text-shadow: 0.5px 0.5px white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-shadow: 0.5px 0.5px white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* CONTENEDOR UNIVERSAL */ 
+.contenedor{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 244, 224);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* FIN CONTENEDOR UNIVERSAL */ 
+
+/* HEADER */
+.header{
+    background-color: rgba(248, 180, 8, 0.69);
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header img{
+    height: 88px;
+}
+/* FIN HEADER */
+
+/* NAVBAR */
+.nav .ulNav{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    background-color: rgb(67, 67, 67);
+}
+
+.nav .ulNav li{
+    list-style-type: none;
+    padding: 5px;    
+    text-align: center;
+}
+
+.nav .ulNav li a{
+    color: rgb(255, 255, 255);
+    padding: 4px;
+    text-decoration: none;
+}
+
+.nav .ulNav li a:hover{
+    background-color: rgb(117, 172, 236);
+}
+/* FIN NAVBAR */
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor .principal{
+    background-image: url(../images/Praias/white-g1dc2efb8f_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* MAIN INDEX */
+.contenedor .principal .articulo{
+    height: auto;
+    text-align: center;
+}
+
+.contenedor .principal .articulo p{
+    font-style: italic;
+    text-align: justify;
+    padding: 10px 30px;
+}
+
+.contenedor .principal .articulo img{
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid rgb(87, 85, 85);
+}
+
+.contenedor .principal .articulo video{
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/* FIN MAIN INDEX */
+
+/* MAIN QUARTOS */
+.contenedor .principal .quartos{
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* QUARTOS DET */
+.contenedor .principal .quartos .quartosDet{
+    margin-bottom: 10px;
+}
+
+.contenedor .principal .quartos .quartosDet img{
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid rgb(87, 85, 85);
+}
+
+.contenedor .principal .quartos .quartosDet ul{
+    list-style-type: none;
+    font-style: italic;
+}
+/* FIN QUARTOS DET */
+/* FIN MAIN QUARTOS */
+
+/* SERVICIOS */
+.contenedor .principal .servicios{
+    height: auto;
+    text-align: center;
+}
+
+.contenedor .principal .servicios ul{
+    list-style-type: none;
+    list-style-image: url("../images/icons8-ok-16.png");
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+/* FIN SERVICIOS */
+
+/* MAIN GALERIA */
+.contenedor .principal .galeria{
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7,auto);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* FIN MAIN GALERIA */
+
+/* GALERIA FOTOS */
+.contenedor .principal .galeria .foto{
+    height: 230px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid rgb(87, 85, 85);
+    margin-bottom: 20px;
+    filter: grayscale(100%);
+}
+
+.contenedor .principal .galeria .foto:hover{
+    transform: scale(1.08);
+    transform: all 1s;
+    filter: grayscale(0%);
+}
+
+.contenedor .principal .galeria .foto1{
+    background-image: url(../images/General/hostelworld_1920x1090_px_05.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contenedor .principal .galeria .foto2{
+    background-image: url(../images/General/hostelworld_1920x1090_px_08.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contenedor .principal .galeria .foto3{
+    background-image: url(../images/General/hostelworld_1920x1090_px_10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contenedor .principal .galeria .foto4{
+    background-image: url(../images/General/hostelworld_1920x1090_px_12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contenedor .principal .galeria .foto5{
+    background-image: url(../images/General/hostelworld_1920x1090_px_2SETE.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contenedor .principal .galeria .foto6{
+    background-image: url(../images/General/hostelworld_1920x1090_px_30.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* MAIN PLAYAS Y ACTIVIDADES */
+.contenedor .principal .playas{
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* PLAYAS DET */
+.contenedor .principal .playas .playaDet{
+    margin-bottom: 10px;
+}
+
+.contenedor .principal .playas .playaDet img{
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid rgb(87, 85, 85);
+}
+
+/* FIN PLAYAS DET */
+
+/* ACTIVIDADES */
+.contenedor .principal .actividades{
+    height: auto;
+    text-align: center;
+}
+
+.contenedor .principal .actividades iframe{
+    width: 90%;
+    height: 500px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/* FIN PLAYAS Y ACTIVIDADES */
+
+/* LOCALIZACION */
+.contenedor .principal .ubicacion{
+    height: auto;
+    text-align: center;
+}
+
+.contenedor .principal .ubicacion ul{
+    list-style-type: none;
+    list-style-image: url("../images/icons8-where-48.png");
+    text-align: left;
+    padding-left: 70px;
+    padding-bottom: 40px;
+}
+
+.contenedor .principal .ubicacion ul a{
+    text-decoration: none;
+    color:rgb(55, 55, 55);
+}
+
+.contenedor .principal .ubicacion iframe{
+    width: 95%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+/* FIN LOCALIZACION */ 
+
+/* CONTACTO */
+.contenedor .principal .contacto{
+    height: 100vh;
+}
+
+.contenedor .principal .contacto .mail p{
+    padding-left: 10px;
+}
+
+.contenedor .principal .contacto form{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.contenedor .principal .contacto .formulario .boton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(55, 55, 55);
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(55, 55, 55);
+    border-radius: 20px;
+}
+
+.contenedor .principal .contacto .formulario .boton:hover{
+    background-color: rgb(117, 172, 236);
+}
+/* FIN CONTACTO */
+
+/* ASIDE */
+.contenedor .aside{
+    padding: 10px;
+}
+/* FIN ASIDE */
+
+/* FOOTER */
+.footer{
+    background-color: rgb(67, 67, 67);
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.footer .ubicacion{
+    display: flex;
+    align-items: center;
+}
+
+.footer .ubicacion p{
+    margin-left: 10px;
+}
+
+.footer .redes{
+    text-align: center;
+}
+
+.footer .redes i{
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+.footer .redes a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer p{
+    text-align: center;
+}
+/* FIN FOOTER */
+
+/*MEDIAS QUERY*/
+/* Media query 600px */
+@media only screen and (min-width:600px){
+    
+    /* MEDIA QUERY INDEX 600px */
+    .nav .ulNav{
+        display: flex;
+        flex-direction: row;
+        justify-content:start;
+    }
+      
+    /* MEDIA QUERY QUARTOS 600px */
+    .contenedor .principal .quartos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-column-gap: 20px;
+    }
+    
+    .contenedor .principal .quartos .titulo{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    /* MEDIA QUERY GALERIA 600px */
+    .contenedor .principal .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-column-gap: 20px;
+    }
+    
+    .contenedor .principal .galeria .titulo{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    .contenedor .principal .galeria .foto{
+        height: 250px;
+    }
+        
+    .contenedor .principal .galeria .foto1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .contenedor .principal .galeria .foto2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .contenedor .principal .galeria .foto3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .contenedor .principal .galeria .foto4{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .contenedor .principal .galeria .foto5{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    .contenedor .principal .galeria .foto6{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    
+    .contenedor .principal .servicios ul{
+        font-size: 20px;
+    }
+}
+
+/* Media query 1024px */
+@media only screen and (min-width:1024px){
+    
+     /* MEDIA QUERY INDEX 1024px */
+    .contenedor .principal .portada{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 20px;
+    }
+    
+    .contenedor .principal .portada .articulo1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .contenedor .principal .portada .articulo2{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        width: 80%;
+        justify-self: center;
+    }
+        
+    .contenedor .principal .portada .aside{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-top: 65px;
+        padding-right: 40px;
+    }
+        
+    /* MEDIA QUERY QUARTOS 1024px */
+    .contenedor .principal .quartos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,auto);
+        grid-column-gap: 20px;
+    }
+    
+    .contenedor .principal .quartos .titulo{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    
+     /* MEDIA QUERY GALERIA 1024px */
+    .contenedor .principal .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,auto);
+        grid-column-gap: 20px;
+    }
+    
+    .contenedor .principal .galeria .titulo{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    
+    .contenedor .principal .galeria .foto{
+        height: 280px;
+    }
+    
+    .contenedor .principal .galeria .foto1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .contenedor .principal .galeria .foto2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .contenedor .principal .galeria .foto3{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    
+    .contenedor .principal .galeria .foto4{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .contenedor .principal .galeria .foto5{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .contenedor .principal .galeria .foto6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    
+    .contenedor .principal .servicios ul{
+        font-size: 22px;
+    }
+    
+    /* MEDIA QUERY PLAYAS 1024px */
+    .contenedor .principal .playas{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(1,auto);
+        grid-column-gap: 20px;
+    }
+    
+    .contenedor .principal .playas .titulo{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+}
+
+
