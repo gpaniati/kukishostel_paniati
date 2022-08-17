@@ -542,6 +542,30 @@ h3{
 /* Escalado en fotos de galeria */
 .contenedor .principal .galeria .foto:hover{
     transform: scale(1.08);
-    transform: all 5s;
     filter: grayscale(0%);
+}
+
+/* Tiempo de transicion imagenes galeria */
+.contenedor .principal .galeria .foto{
+    transition: all 2.5s;
+}
+
+/* Animacion de texto "Como llegar" - Tipo cartel titilante*/
+.comoLlegar{
+    animation-name: titilar;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titilar{
+    0%{
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
 }
