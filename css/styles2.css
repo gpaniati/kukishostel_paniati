@@ -175,11 +175,11 @@ h3{
     filter: grayscale(100%);
 }
 
-.contenedor .principal .galeria .foto:hover{
+/*.contenedor .principal .galeria .foto:hover{
     transform: scale(1.08);
     transform: all 1s;
     filter: grayscale(0%);
-}
+}*/
 
 .contenedor .principal .galeria .foto1{
     background-image: url(../images/General/hostelworld_1920x1090_px_05.jpg);
@@ -525,4 +525,23 @@ h3{
     }
 }
 
+/* Desafio 6 - Animaciones, transformaciones y transiciones*/
 
+/* HEADER */
+/* Gradiente en header */
+.header{
+    background-image: linear-gradient(to right, #f8b408, #7dae36);
+    /*background-image: linear-gradient(to right, #f8b408, #7dae36, #009269, #006e77);*/
+}
+
+/* Gradiente en footer */
+.footer{
+    background: linear-gradient(90deg, #434343 0%, #006e77 100%);
+}
+
+/* Escalado en fotos de galeria */
+.contenedor .principal .galeria .foto:hover{
+    transform: scale(1.08);
+    transform: all 5s;
+    filter: grayscale(0%);
+}

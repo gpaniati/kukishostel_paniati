@@ -7,8 +7,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles2.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/styles2.css">
     <title>Kuki's Hostel</title>
 </head>
 <body>
@@ -47,7 +48,7 @@
                     <video src="./videos/experienciakukis.mp4" controls autoplay loop></video>
                 </div>
                 <!-- Aside: Barra lateral - Reseñas Booking-->
-                <aside class="aside">
+                <aside data-aos="fade-left" class="aside">
                     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                     <div class="elfsight-app-5d1be7fc-26fc-4331-b914-d6fa8cd91fe0"></div>
                 </aside>
@@ -66,6 +67,12 @@
             <p>Copyright All Rights Reserved</p>
         </footer>
     </div>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+            easing: 'ease'
+        });
+    </script>
 </body>
 </html>
