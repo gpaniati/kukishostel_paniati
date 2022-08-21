@@ -1,7 +1,132 @@
 /* Reseteo CSS */
 *{
+    font-family: 'Baloo 2', cursive;
+    box-sizing: border-box;
+}
+
+h2{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    text-shadow: 0.5px 0.5px white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-shadow: 0.5px 0.5px white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* HEADER */
+.header .container-fluid{
+    background-color: rgba(248, 180, 8, 0.69);
+    align-items: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Baloo 2', cursive;
 }
+
+.header .container-fluid h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px white;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0;
+}
+
+.header .container-fluid img{
+    height: 88px;
+}
+
+/* Gradiente en header */
+.header{
+    background-image: linear-gradient(to right, #f8b408, #7dae36);
+}
+/* FIN HEADER */
+
+/* NAVBAR */
+.bgnav{
+    background-color: rgb(67, 67, 67);
+}
+
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+}
+/* FIN NAVBAR */
+
+/* MAIN */
+.principal{
+    background-image: url(../images/Praias/white-g1dc2efb8f_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.articulo{
+    text-align: center;
+}
+
+.articulo img{
+    width: 90%;
+    border-radius: 20px;
+    border: 2px solid rgb(87, 85, 85);
+}
+
+.articulo p{
+    font-style: italic;
+    text-align: justify;
+    padding: 10px 60px;
+}
+
+.articulo video{
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/* FIN MAIN */
+
+/* FOOTER */ 
+/* Gradiente en footer */
+.footer{
+    background: linear-gradient(90deg, #434343 0%, #006e77 100%);
+}
+
+.footer{
+    background-color: rgb(67, 67, 67);
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.footer .ubicacion{
+    display: flex;
+    align-items: center;
+}
+
+.footer .ubicacion p{
+    margin-left: 10px;
+    margin-top: 2.5px;
+    margin-bottom: 0;
+}
+
+.footer .redes{
+    text-align: center;
+}
+
+.footer .redes i{
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+.footer .redes a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer p{
+    text-align: center;
+}
+/* FIN FOOTER */ 
