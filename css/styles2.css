@@ -1,6 +1,8 @@
 /* Reseteo CSS */
 *{
     font-family: 'Baloo 2', cursive;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -129,6 +131,17 @@ h3, h4{
     object-fit: cover;
 }
 /* FIN GALERIA */
+
+/* PLAYAS Y ACTIVIDADES */
+.playas .card{
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.playas .card-img-top{
+    border-radius: 0;
+    opacity: 0.9;
+}
+
 
 /* FOOTER */ 
 /* Gradiente en footer */

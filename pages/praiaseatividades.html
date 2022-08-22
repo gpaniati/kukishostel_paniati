@@ -7,75 +7,101 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/styles2.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles2.css">
     <title>Praias e Atividades</title>
 </head>
 <body>
-    <!-- Contenedor GRIDS -->
-    <div class="contenedor">
-       <!-- Inicio encabezado -->
-        <header class="header">
+    <!-- Inicio encabezado -->
+    <header class="header">
+        <div class="container-fluid row">
             <!-- Logo y titulo principal -->
             <a href="../index.html"><img src="../images/logokukis.png" alt="logokukis"></a>
             <h1>Kuki's Hostel</h1>
-        </header>
-        <!-- Fin encabezado -->
-        <!-- Menu de navegacion -->
-        <nav class="nav">
-            <ul class="ulNav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./acomodação.html">Acomodação</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./praiaseatividades.html">Praias e Atividades</a></li>
-                <li><a href="./localização.html">Localização</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+        </div>
+    </header>
+    <!-- Fin encabezado -->
+    <!-- Inicio navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bgnav">
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./acomodação.html">Acomodação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./praiaseatividades.html">Praias e Atividades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./localização.html">Localização</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
             </ul>
-        </nav>
-        <!-- Fin menu de navegacion -->
-        <main class="principal">
-            <!-- Contenedor GRIDS -->
-            <!-- Seccion Imagenes de Playas Tipicas -->
-            <section class="playas">
-                <div class="titulo">
-                    <h2>Praias de Pipa, Brasil</h2>
+        </div>
+    </nav>
+    <!-- Fin navbar -->
+    <!-- Inicio del Main -->
+    <main class="principal"></main>
+        <h2>Praias de Pipa, Brasil</h2>
+        <section class="playas container-fluid">
+            <div class=row>
+                <!-- Cards de Playas -->
+                <div class="card col-lg-6">
+                    <img class="card-img-top" src="../images/Praias/PraiadasMinas.jpg" alt="playaminas">
+                    <div class="card-body">
+                        <h4 class="card-title">Praia das Minas</h4>
+                    </div>
                 </div>
-                <article class="playaDet">
-                    <img src="../images/Praias/PraiadasMinas.jpg" alt="praiadasminas">
-                    <h3>Praia das Minas</h4>
-                </article>
-                <article class="playaDet">
-                    <img src="../images/Praias/PraiadoAmor.jpg" alt="praiadoamor">
-                    <h3>Praia do Amor</h4>
-                </article>
-                <article class="playaDet">
-                    <img src="../images/Praias/PraiadoCentro.jpg" alt="praiadocentro">
-                    <h3>Praia do Centro</h4>
-                </article>
-                <article class="playaDet">
-                    <img src="../images/Praias/PraiadoMadeiro.jpg" alt="praiadomadeiro">
-                    <h3>Praia do Madeiro</h4>
-                </article>
-            </section>
-            <!-- Seccion Video Actividades -->
-            <div class="actividades">
-                <h2>Atividades</h2>
-                <!--width="660" height="415" -->
-                <iframe src="https://www.youtube.com/embed/0tKOFrFluKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card col-lg-6">
+                    <img class="card-img-top" src="../images/Praias/PraiadoAmor.jpg" alt="playaamor">
+                    <div class="card-body">
+                        <h4 class="card-title">Praia do Amor</h4>
+                    </div>
+                </div>
+                <div class="card col-lg-6">
+                    <img class="card-img-top" src="../images/Praias/PraiadoCentro.jpg" alt="playadocentro">
+                    <div class="card-body">
+                        <h4 class="card-title">Praia do Centro</h4>
+                    </div>
+                </div>
+                <div class="card col-lg-6">
+                    <img class="card-img-top" src="../images/Praias/PraiadoMadeiro.jpg" alt="playadomadeiro">
+                    <div class="card-body">
+                        <h4 class="card-title">Praia do Centro</h4>
+                    </div>
+                </div>
             </div>
-        </main>
-        <!-- Pie de pagina - Redes dociales --> 
-        <footer class="footer">
-            <div class="ubicacion">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Rua dos Cisnes, 20, Tibau do Sul - RN, Brasil</p>
-            </div>
-            <div class="redes">
-                <a href="https://www.facebook.com/kukishostelpipa/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/kukishostel/?hl=es"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <p>Copyright All Rights Reserved</p>
-        </footer>
-    </div>
+        </section>
+    </main>
+    <!-- Fin del Main -->
+    <!-- Pie de pagina - Redes dociales --> 
+    <footer class="footer">
+        <div class="ubicacion">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rua dos Cisnes, 20, Tibau do Sul - RN, Brasil</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com/kukishostelpipa/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kukishostel/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright All Rights Reserved</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
