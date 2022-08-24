@@ -6,6 +6,20 @@
     box-sizing: border-box;
 }
 
+/*body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    min-height: 100vh;
+}*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
 h2{
     color: red;
     font-weight: bold;
@@ -89,6 +103,10 @@ h3, h4{
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
+.booking{
+    height: 100%;
+}
 /* FIN MAIN */
 
 /* MAIN QUARTOS/SERVICIOS */
@@ -154,19 +172,19 @@ h3, h4{
 }
 
 /* LOCALIZACION */
-.principal .mapa{
+.mapa{
     height: auto;
     text-align: center;
 }
 
-.principal .mapa iframe{
+.mapa iframe{
     width: 95%;
     height: 400px;
     margin-bottom: 20px;
 }
 
 /* Animacion de texto "Como llegar" - Tipo cartel titilante*/
-.principal .llegar .comoLlegar{
+.llegar .comoLlegar{
     animation-name: titilar;
     animation-duration: 1s;
     animation-direction: alternate;
@@ -185,7 +203,7 @@ h3, h4{
     }
 }
 
-.principal .llegar ul{
+.llegar ul{
     list-style-type: none;
     list-style-image: url("../images/icons8-where-48.png");
     text-align: left;
@@ -193,10 +211,37 @@ h3, h4{
     padding-bottom: 40px;
 }
 
-.principal .llegar ul a{
+.llegar ul a{
     text-decoration: none;
     color:rgb(55, 55, 55);
 }
+/* FIN LOCALIZACION */
+
+/* CONTACTO */
+.contacto .mail p{
+    padding-left: 10px;
+}
+
+.contacto form{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.contacto .formulario .boton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(55, 55, 55);
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(55, 55, 55);
+    border-radius: 20px;
+}
+
+.contacto .formulario .boton:hover{
+    background-color: rgb(117, 172, 236);
+}
+/* FIN CONTACTO */
 
 /* FOOTER */ 
 /* Gradiente en footer */
