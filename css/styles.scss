@@ -49,40 +49,8 @@ h3, h4{
     font-family: $fuenteCabeceras;
 }
 
-/* HEADER */
-.header .container-fluid{
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.header .container-fluid h1{
-    font-size: 35px;
-    font-weight: bold;
-    text-shadow: $shadowSetup;
-    font-family: $fuenteCabeceras;
-    margin: 0;
-}
-
-.header .container-fluid img{
-    height: 88px;
-}
-
-/* Gradiente en header */
-.header{
-    background: linear-gradient(90deg, $bColor1Cabecera 0%, $bColor2Cabecera 100%);
-}
-/* FIN HEADER */
-
-/* NAVBAR */
-.bgnav{
-    background-color: $bColorNavBar;
-}
-
-.nav-link{
-    color: $bColorLink !important;
-}
-/* FIN NAVBAR */
+@import "../css/header";
+@import "../css/navBar";
 
 /* MAIN */
 .principal{
@@ -90,55 +58,44 @@ h3, h4{
     background-size: cover;
     background-position: center;
     width: 100%;
-}
-
-.articulo{
-    text-align: center;
-}
-
-.articulo img{
-    width: 90%;
-    border-radius: 20px;
-    border: 2px solid rgb(87, 85, 85);
-}
-
-.articulo p{
-    font-style: italic;
-    text-align: justify;
-    padding: 10px 60px;
-}
-
-.articulo video{
-    width: 90%;
-    height: auto;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-.booking{
-    height: 100%;
+    .articulo{
+        text-align: center;
+        img{
+            width: 90%;
+            border-radius: 20px;
+            border: 2px solid rgb(87, 85, 85);
+        }
+        p{
+            font-style: italic;
+            text-align: justify;
+            padding: 10px 60px;
+        }
+        video{
+            width: 90%;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+    }
 }
 /* FIN MAIN */
 
 /* MAIN QUARTOS/SERVICIOS */
 .quartos{
     margin-top: 40px;
+    .carta{
+        margin-top: 30px;;
+        .card-img-top{
+            border-radius: 30px;
+            opacity: 0.9;
+        }
+        ul{
+            list-style-type: none;
+            font-style: italic !important;
+            padding-inline-start: 10px;
+        }
+    }
 }
-
-.quartos .carta{
-    margin-top: 30px;;
-}
-.quartos .card-img-top{
-    border-radius: 30px;
-    opacity: 0.9;
-}
-
-.quartos ul{
-    list-style-type: none;
-    font-style: italic !important;
-    padding-inline-start: 10px;
-}
-
 .servicios ul{
     list-style-type: none;
     list-style-image: url("../images/icons8-ok-16.png");
@@ -175,16 +132,14 @@ h3, h4{
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.carousel-item img{
-    width: 100%;
-    height: 400%;
-    border-radius: 30px;
-}
-
-.carousel-item{
-    object-fit: cover;
+    .carousel-item{
+        object-fit: cover;
+        img{
+            width: 100%;
+            height: 400%;
+            border-radius: 30px;
+        }
+    }
 }
 /* FIN GALERIA */
 
@@ -192,43 +147,52 @@ h3, h4{
 .playas .card{
     margin-bottom: 10px;
     border-radius: 15px;
+    .card-img-top{
+        border-radius: 0;
+        opacity: 0.9;
+    }
 }
-.playas .card-img-top{
-    border-radius: 0;
-    opacity: 0.9;
-}
-
 .actividades{
     text-align: center;
-}
-
-.actividades iframe{
-    width: 90%;
-    height: 500px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    iframe{
+        width: 90%;
+        height: 500px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 /* LOCALIZACION */
 .mapa{
     height: auto;
     text-align: center;
-}
-
-.mapa iframe{
-    width: 95%;
-    height: 400px;
-    margin-bottom: 20px;
+    iframe{
+        width: 95%;
+        height: 400px;
+        margin-bottom: 20px;
+    }
 }
 
 /* Animacion de texto "Como llegar" - Tipo cartel titilante*/
-.llegar .comoLlegar{
-    animation-name: titilar;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+.llegar{
+    .comoLlegar{
+        animation-name: titilar;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+    ul{
+        list-style-type: none;
+        list-style-image: url("../images/icons8-where-48.png");
+        text-align: left;
+        padding-left: 70px;
+        padding-bottom: 40px;
+        a{
+            text-decoration: none;
+            color:rgb(55, 55, 55);
+        }
+    }
 }
-
 @keyframes titilar{
     0%{
         opacity: 0.1;
@@ -240,73 +204,51 @@ h3, h4{
         opacity: 1;
     }
 }
-
-.llegar ul{
-    list-style-type: none;
-    list-style-image: url("../images/icons8-where-48.png");
-    text-align: left;
-    padding-left: 70px;
-    padding-bottom: 40px;
-}
-
-.llegar ul a{
-    text-decoration: none;
-    color:rgb(55, 55, 55);
-}
 /* FIN LOCALIZACION */
 
 /* CONTACTO */
-.contacto .mail p{
-    padding-left: 10px;
+.contacto{ 
+    .mail p{
+        padding-left: 10px;
+    }
+    form{
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
 }
-
-.contacto form{
-    margin-left: 10px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-}
-
 /* FIN CONTACTO */
 
 /* FOOTER */ 
 /* Gradiente en footer */
 .footer{
     background: linear-gradient(90deg, $bColor1Fotter 0%, $bColor2Footer 100%);
-}
-
-.footer{
     color: white;
     font-size: 14px;
     padding: 5px;
-}
-
-.footer .ubicacion{
-    display: flex;
-    align-items: center;
-}
-
-.footer .ubicacion p{
-    margin-left: 10px;
-    margin-top: 2.5px;
-    margin-bottom: 0;
-}
-
-.footer .redes{
-    text-align: center;
-}
-
-.footer .redes i{
-    letter-spacing: 10px;
-    font-size: 20px;
-}
-
-.footer .redes a{
-    text-decoration: none;
-    color: white;
-}
-
-.footer p{
-    text-align: center;
+    .ubicacion{
+        display: flex;
+        align-items: center;
+        p{
+            margin-left: 10px;
+            margin-top: 2.5px;
+            margin-bottom: 0;
+        }
+    }
+    .redes{
+        text-align: center;
+        i{
+            letter-spacing: 10px;
+            font-size: 20px;
+        }       
+        a{
+            text-decoration: none;
+            color: $bColorLink;
+        }
+    }  
+    p{
+        text-align: center;
+    }
 }
 /* FIN FOOTER */ 
 
@@ -323,4 +265,5 @@ h3, h4{
 
 .boton:hover{
     background-color: rgb(117, 172, 236);
+
 }

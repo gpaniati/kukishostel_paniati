@@ -36,12 +36,14 @@ h3, h4 {
 }
 
 /* HEADER */
+.header {
+  background: linear-gradient(90deg, rgba(248, 180, 8, 0.6901960784) 0%, #7dae36 100%);
+}
 .header .container-fluid {
   align-items: center;
   margin: 0;
   padding: 0;
 }
-
 .header .container-fluid h1 {
   font-size: 35px;
   font-weight: bold;
@@ -49,14 +51,8 @@ h3, h4 {
   font-family: "Kaushan Script", cursive;
   margin: 0;
 }
-
 .header .container-fluid img {
   height: 88px;
-}
-
-/* Gradiente en header */
-.header {
-  background: linear-gradient(90deg, rgba(248, 180, 8, 0.6901960784) 0%, #7dae36 100%);
 }
 
 /* FIN HEADER */
@@ -64,8 +60,7 @@ h3, h4 {
 .bgnav {
   background-color: #434343;
 }
-
-.nav-link {
+.bgnav .nav-link {
   color: #ffffff !important;
 }
 
@@ -77,32 +72,24 @@ h3, h4 {
   background-position: center;
   width: 100%;
 }
-
-.articulo {
+.principal .articulo {
   text-align: center;
 }
-
-.articulo img {
+.principal .articulo img {
   width: 90%;
   border-radius: 20px;
   border: 2px solid rgb(87, 85, 85);
 }
-
-.articulo p {
+.principal .articulo p {
   font-style: italic;
   text-align: justify;
   padding: 10px 60px;
 }
-
-.articulo video {
+.principal .articulo video {
   width: 90%;
   height: auto;
   border-radius: 20px;
   margin-bottom: 20px;
-}
-
-.booking {
-  height: 100%;
 }
 
 /* FIN MAIN */
@@ -110,20 +97,18 @@ h3, h4 {
 .quartos {
   margin-top: 40px;
 }
-
 .quartos .carta {
   margin-top: 30px;
 }
-
-.quartos .card-img-top {
+.quartos .carta .card-img-top {
   border-radius: 30px;
   opacity: 0.9;
 }
-
-.quartos ul {
+.quartos .carta ul {
   list-style-type: none;
   font-style: italic !important;
-  padding-inline-start: 10px;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
 }
 
 .servicios ul {
@@ -163,15 +148,14 @@ h3, h4 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
-.carousel-item img {
+.carousel .carousel-item {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel .carousel-item img {
   width: 100%;
   height: 400%;
   border-radius: 30px;
-}
-
-.carousel-item {
-  object-fit: cover;
 }
 
 /* FIN GALERIA */
@@ -180,8 +164,7 @@ h3, h4 {
   margin-bottom: 10px;
   border-radius: 15px;
 }
-
-.playas .card-img-top {
+.playas .card .card-img-top {
   border-radius: 0;
   opacity: 0.9;
 }
@@ -189,7 +172,6 @@ h3, h4 {
 .actividades {
   text-align: center;
 }
-
 .actividades iframe {
   width: 90%;
   height: 500px;
@@ -202,7 +184,6 @@ h3, h4 {
   height: auto;
   text-align: center;
 }
-
 .mapa iframe {
   width: 95%;
   height: 400px;
@@ -211,10 +192,37 @@ h3, h4 {
 
 /* Animacion de texto "Como llegar" - Tipo cartel titilante*/
 .llegar .comoLlegar {
-  animation-name: titilar;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: titilar;
+          animation-name: titilar;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.llegar ul {
+  list-style-type: none;
+  list-style-image: url("../images/icons8-where-48.png");
+  text-align: left;
+  padding-left: 70px;
+  padding-bottom: 40px;
+}
+.llegar ul a {
+  text-decoration: none;
+  color: rgb(55, 55, 55);
+}
+
+@-webkit-keyframes titilar {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes titilar {
@@ -228,25 +236,11 @@ h3, h4 {
     opacity: 1;
   }
 }
-.llegar ul {
-  list-style-type: none;
-  list-style-image: url("../images/icons8-where-48.png");
-  text-align: left;
-  padding-left: 70px;
-  padding-bottom: 40px;
-}
-
-.llegar ul a {
-  text-decoration: none;
-  color: rgb(55, 55, 55);
-}
-
 /* FIN LOCALIZACION */
 /* CONTACTO */
 .contacto .mail p {
   padding-left: 10px;
 }
-
 .contacto form {
   margin-left: 10px;
   margin-bottom: 20px;
@@ -258,39 +252,30 @@ h3, h4 {
 /* Gradiente en footer */
 .footer {
   background: linear-gradient(90deg, #434343 0%, #006e77 100%);
-}
-
-.footer {
   color: white;
   font-size: 14px;
   padding: 5px;
 }
-
 .footer .ubicacion {
   display: flex;
   align-items: center;
 }
-
 .footer .ubicacion p {
   margin-left: 10px;
   margin-top: 2.5px;
   margin-bottom: 0;
 }
-
 .footer .redes {
   text-align: center;
 }
-
 .footer .redes i {
   letter-spacing: 10px;
   font-size: 20px;
 }
-
 .footer .redes a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
-
 .footer p {
   text-align: center;
 }
@@ -309,6 +294,4 @@ h3, h4 {
 
 .boton:hover {
   background-color: rgb(117, 172, 236);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
