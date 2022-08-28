@@ -1,3 +1,9 @@
+/* VARIABLES GENERALES */
+/* Fuentes */
+/* Colores */
+/* Background Colors */
+/* Titulos Colors */
+/* FIN VARIABLES GENERALES */
 /* Reseteo CSS */
 * {
   font-family: "Baloo 2", cursive;
@@ -13,25 +19,24 @@ body {
 }
 
 h2 {
-  color: red;
+  color: #ff0000;
   font-weight: bold;
   font-size: 30px;
   padding: 10px;
-  text-shadow: 1px 1px white;
+  text-shadow: 1px 1px #ffffff;
   font-family: "Kaushan Script", cursive;
   text-align: center;
 }
 
 h3, h4 {
-  color: rgb(0, 0, 0);
+  color: #000000;
   padding: 10px;
-  text-shadow: 0.5px 0.5px white;
+  text-shadow: 1px 1px #ffffff;
   font-family: "Kaushan Script", cursive;
 }
 
 /* HEADER */
 .header .container-fluid {
-  background-color: rgba(248, 180, 8, 0.6901960784);
   align-items: center;
   margin: 0;
   padding: 0;
@@ -40,7 +45,7 @@ h3, h4 {
 .header .container-fluid h1 {
   font-size: 35px;
   font-weight: bold;
-  text-shadow: 0.5px 0.5px white;
+  text-shadow: 1px 1px #ffffff;
   font-family: "Kaushan Script", cursive;
   margin: 0;
 }
@@ -51,17 +56,17 @@ h3, h4 {
 
 /* Gradiente en header */
 .header {
-  background-image: linear-gradient(to right, #f8b408, #7dae36);
+  background: linear-gradient(90deg, rgba(248, 180, 8, 0.6901960784) 0%, #7dae36 100%);
 }
 
 /* FIN HEADER */
 /* NAVBAR */
 .bgnav {
-  background-color: rgb(67, 67, 67);
+  background-color: #434343;
 }
 
 .nav-link {
-  color: rgb(255, 255, 255) !important;
+  color: #ffffff !important;
 }
 
 /* FIN NAVBAR */
@@ -256,7 +261,6 @@ h3, h4 {
 }
 
 .footer {
-  background-color: rgb(67, 67, 67);
   color: white;
   font-size: 14px;
   padding: 5px;

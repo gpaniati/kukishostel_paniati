@@ -1,6 +1,26 @@
+/* VARIABLES GENERALES */
+/* Fuentes */
+$fuenteGeneral: 'Baloo 2', cursive;
+$fuenteCabeceras : 'Kaushan Script', cursive;
+
+/* Colores */
+/* Background Colors */
+$bColor1Cabecera : #f8b408b0;
+$bColor2Cabecera : #7dae36;
+$bColor1Fotter: #434343; 
+$bColor2Footer: #006e77;
+$bColorNavBar: #434343;
+$bColorLink: #ffffff;
+/* Titulos Colors */
+$h2Color: #ff0000;
+$h34Color: #000000;
+$shadowSetup: 1px 1px #ffffff;
+
+/* FIN VARIABLES GENERALES */
+
 /* Reseteo CSS */
 *{
-    font-family: 'Baloo 2', cursive;
+    font-family: $fuenteGeneral;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,25 +33,24 @@ body{
 }
 
 h2{
-    color: red;
+    color: $h2Color;
     font-weight: bold;
     font-size: 30px;
     padding: 10px;
-    text-shadow: 1px 1px white;
-    font-family: 'Kaushan Script', cursive;
+    text-shadow: $shadowSetup;
+    font-family: $fuenteCabeceras;
     text-align: center;
 }
 
 h3, h4{
-    color: rgb(0, 0, 0);
+    color: $h34Color;
     padding: 10px;
-    text-shadow: 0.5px 0.5px white;
-    font-family: 'Kaushan Script', cursive;
+    text-shadow: $shadowSetup;
+    font-family: $fuenteCabeceras;
 }
 
 /* HEADER */
 .header .container-fluid{
-    background-color: #f8b408b0;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -40,8 +59,8 @@ h3, h4{
 .header .container-fluid h1{
     font-size: 35px;
     font-weight: bold;
-    text-shadow: 0.5px 0.5px white;
-    font-family: 'Kaushan Script', cursive;
+    text-shadow: $shadowSetup;
+    font-family: $fuenteCabeceras;
     margin: 0;
 }
 
@@ -51,17 +70,17 @@ h3, h4{
 
 /* Gradiente en header */
 .header{
-    background-image: linear-gradient(to right, #f8b408, #7dae36);
+    background: linear-gradient(90deg, $bColor1Cabecera 0%, $bColor2Cabecera 100%);
 }
 /* FIN HEADER */
 
 /* NAVBAR */
 .bgnav{
-    background-color: rgb(67, 67, 67);
+    background-color: $bColorNavBar;
 }
 
 .nav-link{
-    color: rgb(255, 255, 255) !important;
+    color: $bColorLink !important;
 }
 /* FIN NAVBAR */
 
@@ -252,11 +271,10 @@ h3, h4{
 /* FOOTER */ 
 /* Gradiente en footer */
 .footer{
-    background: linear-gradient(90deg, #434343 0%, #006e77 100%);
+    background: linear-gradient(90deg, $bColor1Fotter 0%, $bColor2Footer 100%);
 }
 
 .footer{
-    background-color: rgb(67, 67, 67);
     color: white;
     font-size: 14px;
     padding: 5px;
