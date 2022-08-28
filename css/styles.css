@@ -1,0 +1,310 @@
+/* Reseteo CSS */
+* {
+  font-family: "Baloo 2", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px;
+  text-shadow: 1px 1px white;
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+}
+
+h3, h4 {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-shadow: 0.5px 0.5px white;
+  font-family: "Kaushan Script", cursive;
+}
+
+/* HEADER */
+.header .container-fluid {
+  background-color: rgba(248, 180, 8, 0.6901960784);
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header .container-fluid h1 {
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px white;
+  font-family: "Kaushan Script", cursive;
+  margin: 0;
+}
+
+.header .container-fluid img {
+  height: 88px;
+}
+
+/* Gradiente en header */
+.header {
+  background-image: linear-gradient(to right, #f8b408, #7dae36);
+}
+
+/* FIN HEADER */
+/* NAVBAR */
+.bgnav {
+  background-color: rgb(67, 67, 67);
+}
+
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* FIN NAVBAR */
+/* MAIN */
+.principal {
+  background-image: url(../images/Praias/white-g1dc2efb8f_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.articulo {
+  text-align: center;
+}
+
+.articulo img {
+  width: 90%;
+  border-radius: 20px;
+  border: 2px solid rgb(87, 85, 85);
+}
+
+.articulo p {
+  font-style: italic;
+  text-align: justify;
+  padding: 10px 60px;
+}
+
+.articulo video {
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.booking {
+  height: 100%;
+}
+
+/* FIN MAIN */
+/* MAIN QUARTOS/SERVICIOS */
+.quartos {
+  margin-top: 40px;
+}
+
+.quartos .carta {
+  margin-top: 30px;
+}
+
+.quartos .card-img-top {
+  border-radius: 30px;
+  opacity: 0.9;
+}
+
+.quartos ul {
+  list-style-type: none;
+  font-style: italic !important;
+  padding-inline-start: 10px;
+}
+
+.servicios ul {
+  list-style-type: none;
+  list-style-image: url("../images/icons8-ok-16.png");
+  text-align: left;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+/* FIN QUARTOS/SERVICIOS */
+/* GALERIA */
+.jumbotron h2 {
+  font-size: 50px;
+}
+
+.jumboQuartos {
+  background-image: url(../images/Jumbotron/Quartos.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0;
+  min-height: 500px;
+  padding-top: 200px;
+}
+
+.jumboGaleria {
+  background-image: url(../images/Jumbotron/Galeria.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0;
+  min-height: 500px;
+  padding-top: 200px;
+}
+
+.carousel {
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 400%;
+  border-radius: 30px;
+}
+
+.carousel-item {
+  object-fit: cover;
+}
+
+/* FIN GALERIA */
+/* PLAYAS Y ACTIVIDADES */
+.playas .card {
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.playas .card-img-top {
+  border-radius: 0;
+  opacity: 0.9;
+}
+
+.actividades {
+  text-align: center;
+}
+
+.actividades iframe {
+  width: 90%;
+  height: 500px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* LOCALIZACION */
+.mapa {
+  height: auto;
+  text-align: center;
+}
+
+.mapa iframe {
+  width: 95%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+/* Animacion de texto "Como llegar" - Tipo cartel titilante*/
+.llegar .comoLlegar {
+  animation-name: titilar;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes titilar {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.llegar ul {
+  list-style-type: none;
+  list-style-image: url("../images/icons8-where-48.png");
+  text-align: left;
+  padding-left: 70px;
+  padding-bottom: 40px;
+}
+
+.llegar ul a {
+  text-decoration: none;
+  color: rgb(55, 55, 55);
+}
+
+/* FIN LOCALIZACION */
+/* CONTACTO */
+.contacto .mail p {
+  padding-left: 10px;
+}
+
+.contacto form {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+/* FIN CONTACTO */
+/* FOOTER */
+/* Gradiente en footer */
+.footer {
+  background: linear-gradient(90deg, #434343 0%, #006e77 100%);
+}
+
+.footer {
+  background-color: rgb(67, 67, 67);
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.footer .ubicacion {
+  display: flex;
+  align-items: center;
+}
+
+.footer .ubicacion p {
+  margin-left: 10px;
+  margin-top: 2.5px;
+  margin-bottom: 0;
+}
+
+.footer .redes {
+  text-align: center;
+}
+
+.footer .redes i {
+  letter-spacing: 10px;
+  font-size: 20px;
+}
+
+.footer .redes a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer p {
+  text-align: center;
+}
+
+/* FIN FOOTER */
+/* BOTONES */
+.boton {
+  color: rgb(255, 255, 255);
+  background-color: rgb(55, 55, 55);
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 30px;
+}
+
+.boton:hover {
+  background-color: rgb(117, 172, 236);
+}
+
+/*# sourceMappingURL=styles.css.map */
