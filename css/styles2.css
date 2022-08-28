@@ -17,7 +17,7 @@ h2{
     font-weight: bold;
     font-size: 30px;
     padding: 10px;
-    text-shadow: 0.5px 0.5px white;
+    text-shadow: 1px 1px white;
     font-family: 'Kaushan Script', cursive;
     text-align: center;
 }
@@ -31,7 +31,7 @@ h3, h4{
 
 /* HEADER */
 .header .container-fluid{
-    background-color: rgba(248, 180, 8, 0.69);
+    background-color: #f8b408b0;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -102,44 +102,54 @@ h3, h4{
 /* FIN MAIN */
 
 /* MAIN QUARTOS/SERVICIOS */
-.quartos .card{
-    margin-bottom: 10px;
-    border-radius: 15px;
+.quartos{
+    margin-top: 40px;
+}
+
+.quartos .carta{
+    margin-top: 30px;;
 }
 .quartos .card-img-top{
-    border-radius: 0;
+    border-radius: 30px;
     opacity: 0.9;
 }
 
 .quartos ul{
     list-style-type: none;
     font-style: italic !important;
-    padding-inline-start: 20px;
+    padding-inline-start: 10px;
 }
 
 .servicios ul{
     list-style-type: none;
     list-style-image: url("../images/icons8-ok-16.png");
     text-align: left;
-    padding-left: 40px;|
+    padding-left: 40px;
     padding-bottom: 40px;
 }
 /* FIN QUARTOS/SERVICIOS */
 
 /* GALERIA */
 .jumbotron h2{
-    color: white;
-    text-shadow: none;
     font-size: 50px;
 }
 
-.jumbotron{
-    background-image: url(../images/Jumbotron/Brasil12.jpg);
+.jumboQuartos{
+    background-image: url(../images/Jumbotron/Quartos.jpg);
     background-size: cover;
     background-position: center;
     margin-bottom: 0;
-    min-height: 300px;
-    padding-top: 100px;
+    min-height: 500px;
+    padding-top: 200px;
+}
+
+.jumboGaleria{
+    background-image: url(../images/Jumbotron/Galeria.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    min-height: 500px;
+    padding-top: 200px;
 }
 
 .carousel{
@@ -237,19 +247,6 @@ h3, h4{
     margin-right: 10px;
 }
 
-.contacto .formulario .boton{
-    color: rgb(255, 255, 255);
-    background-color: rgb(55, 55, 55);
-    padding: 10px 20px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    border: 1px solid rgb(55, 55, 55);
-    border-radius: 20px;
-}
-
-.contacto .formulario .boton:hover{
-    background-color: rgb(117, 172, 236);
-}
 /* FIN CONTACTO */
 
 /* FOOTER */ 
@@ -294,3 +291,18 @@ h3, h4{
     text-align: center;
 }
 /* FIN FOOTER */ 
+
+/* BOTONES */
+.boton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(55, 55, 55);
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(55, 55, 55);
+    border-radius: 30px;
+}
+
+.boton:hover{
+    background-color: rgb(117, 172, 236);
+}
