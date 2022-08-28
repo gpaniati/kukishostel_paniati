@@ -1,13 +1,15 @@
 /* VARIABLES GENERALES */
 /* Fuentes */
-$fuenteGeneral: 'Baloo 2', cursive;
-$fuenteCabeceras : 'Kaushan Script', cursive;
+$fuenteGeneral: 'Baloo 2',
+cursive;
+$fuenteCabeceras : 'Kaushan Script',
+cursive;
 
 /* Colores */
 /* Background Colors */
 $bColor1Cabecera : #f8b408b0;
 $bColor2Cabecera : #7dae36;
-$bColor1Fotter: #434343; 
+$bColor1Fotter: #434343;
 $bColor2Footer: #006e77;
 $bColorNavBar: #434343;
 $bColorLink: #ffffff;
@@ -15,24 +17,26 @@ $bColorLink: #ffffff;
 $h2Color: #ff0000;
 $h34Color: #000000;
 $shadowSetup: 1px 1px #ffffff;
-
+/* Botones Colors */
+$botonColorBase: #373737;
+$botonColorHover: #75acec;
 /* FIN VARIABLES GENERALES */
 
 /* Reseteo CSS */
-*{
+* {
     font-family: $fuenteGeneral;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-h2{
+h2 {
     color: $h2Color;
     font-weight: bold;
     font-size: 30px;
@@ -42,35 +46,41 @@ h2{
     text-align: center;
 }
 
-h3, h4{
+h3,
+h4 {
     color: $h34Color;
     padding: 10px;
     text-shadow: $shadowSetup;
     font-family: $fuenteCabeceras;
 }
 
+/* Importacion de archivos */
 @import "../css/header";
 @import "../css/navBar";
 
 /* MAIN */
-.principal{
+.principal {
     background-image: url(../images/Praias/white-g1dc2efb8f_1920.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    .articulo{
+
+    .articulo {
         text-align: center;
-        img{
+
+        img {
             width: 90%;
             border-radius: 20px;
             border: 2px solid rgb(87, 85, 85);
         }
-        p{
+
+        p {
             font-style: italic;
             text-align: justify;
             padding: 10px 60px;
         }
-        video{
+
+        video {
             width: 90%;
             height: auto;
             border-radius: 20px;
@@ -78,83 +88,94 @@ h3, h4{
         }
     }
 }
+
 /* FIN MAIN */
 
 /* MAIN QUARTOS/SERVICIOS */
-.quartos{
+.quartos {
     margin-top: 40px;
-    .carta{
-        margin-top: 30px;;
-        .card-img-top{
+
+    .carta {
+        margin-top: 30px;
+        ;
+
+        .card-img-top {
             border-radius: 30px;
             opacity: 0.9;
         }
-        ul{
+
+        ul {
             list-style-type: none;
             font-style: italic !important;
             padding-inline-start: 10px;
         }
     }
 }
-.servicios ul{
+
+.servicios ul {
     list-style-type: none;
     list-style-image: url("../images/icons8-ok-16.png");
     text-align: left;
     padding-left: 40px;
     padding-bottom: 40px;
 }
+
 /* FIN QUARTOS/SERVICIOS */
 
 /* GALERIA */
-.jumbotron h2{
+.jumbotron h2 {
     font-size: 50px;
 }
 
+.jumboGaleria,
 .jumboQuartos{
-    background-image: url(../images/Jumbotron/Quartos.jpg);
-    background-size: cover;
-    background-position: center;
     margin-bottom: 0;
     min-height: 500px;
     padding-top: 200px;
-}
-
-.jumboGaleria{
-    background-image: url(../images/Jumbotron/Galeria.jpg);
     background-size: cover;
     background-position: center;
-    margin-bottom: 0;
-    min-height: 500px;
-    padding-top: 200px;
 }
+/* EACH para imagenes de Jumbotron */ 
+@each $seccion in Quartos, Galeria{
+    .jumbo#{$seccion}{
+        background-image: url("../images/Jumbotron/#{$seccion}.jpg");
+    } 
+}
+/* Fin EACH */
 
-.carousel{
+.carousel {
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    .carousel-item{
+
+    .carousel-item {
         object-fit: cover;
-        img{
+
+        img {
             width: 100%;
             height: 400%;
             border-radius: 30px;
         }
     }
 }
+
 /* FIN GALERIA */
 
 /* PLAYAS Y ACTIVIDADES */
-.playas .card{
+.playas .card {
     margin-bottom: 10px;
     border-radius: 15px;
-    .card-img-top{
+
+    .card-img-top {
         border-radius: 0;
         opacity: 0.9;
     }
 }
-.actividades{
+
+.actividades {
     text-align: center;
-    iframe{
+
+    iframe {
         width: 90%;
         height: 500px;
         border-radius: 20px;
@@ -163,10 +184,11 @@ h3, h4{
 }
 
 /* LOCALIZACION */
-.mapa{
+.mapa {
     height: auto;
     text-align: center;
-    iframe{
+
+    iframe {
         width: 95%;
         height: 400px;
         margin-bottom: 20px;
@@ -174,96 +196,109 @@ h3, h4{
 }
 
 /* Animacion de texto "Como llegar" - Tipo cartel titilante*/
-.llegar{
-    .comoLlegar{
+.llegar {
+    .comoLlegar {
         animation-name: titilar;
         animation-duration: 1s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
     }
-    ul{
+
+    ul {
         list-style-type: none;
         list-style-image: url("../images/icons8-where-48.png");
         text-align: left;
         padding-left: 70px;
         padding-bottom: 40px;
-        a{
+
+        a {
             text-decoration: none;
-            color:rgb(55, 55, 55);
+            color: rgb(55, 55, 55);
         }
     }
 }
-@keyframes titilar{
-    0%{
+
+@keyframes titilar {
+    0% {
         opacity: 0.1;
     }
-    50%{
+
+    50% {
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
+
 /* FIN LOCALIZACION */
 
 /* CONTACTO */
-.contacto{ 
-    .mail p{
+.contacto {
+    .mail p {
         padding-left: 10px;
     }
-    form{
+
+    form {
         margin-left: 10px;
         margin-bottom: 20px;
         margin-right: 10px;
     }
 }
+
 /* FIN CONTACTO */
 
-/* FOOTER */ 
-/* Gradiente en footer */
-.footer{
+/* FOOTER */
+.footer {
     background: linear-gradient(90deg, $bColor1Fotter 0%, $bColor2Footer 100%);
     color: white;
     font-size: 14px;
     padding: 5px;
-    .ubicacion{
+
+    .ubicacion {
         display: flex;
         align-items: center;
-        p{
+
+        p {
             margin-left: 10px;
             margin-top: 2.5px;
             margin-bottom: 0;
         }
     }
-    .redes{
+
+    .redes {
         text-align: center;
-        i{
+
+        i {
             letter-spacing: 10px;
             font-size: 20px;
-        }       
-        a{
+        }
+
+        a {
             text-decoration: none;
             color: $bColorLink;
         }
-    }  
-    p{
+    }
+
+    p {
         text-align: center;
     }
 }
-/* FIN FOOTER */ 
+
+/* FIN FOOTER */
 
 /* BOTONES */
-.boton{
+.boton {
     color: rgb(255, 255, 255);
-    background-color: rgb(55, 55, 55);
+    background-color: $botonColorBase;
     padding: 10px 20px;
     margin-left: 10px;
     margin-bottom: 10px;
     border: 1px solid rgb(55, 55, 55);
     border-radius: 30px;
-}
 
-.boton:hover{
-    background-color: rgb(117, 172, 236);
-
+    &:hover {
+        background-color: $botonColorHover;
+    }
 }

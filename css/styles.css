@@ -3,6 +3,7 @@
 /* Colores */
 /* Background Colors */
 /* Titulos Colors */
+/* Botones Colors */
 /* FIN VARIABLES GENERALES */
 /* Reseteo CSS */
 * {
@@ -28,13 +29,15 @@ h2 {
   text-align: center;
 }
 
-h3, h4 {
+h3,
+h4 {
   color: #000000;
   padding: 10px;
   text-shadow: 1px 1px #ffffff;
   font-family: "Kaushan Script", cursive;
 }
 
+/* Importacion de archivos */
 /* HEADER */
 .header {
   background: linear-gradient(90deg, rgba(248, 180, 8, 0.6901960784) 0%, #7dae36 100%);
@@ -125,24 +128,25 @@ h3, h4 {
   font-size: 50px;
 }
 
+.jumboGaleria,
 .jumboQuartos {
-  background-image: url(../images/Jumbotron/Quartos.jpg);
-  background-size: cover;
-  background-position: center;
   margin-bottom: 0;
   min-height: 500px;
   padding-top: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* EACH para imagenes de Jumbotron */
+.jumboQuartos {
+  background-image: url("../images/Jumbotron/Quartos.jpg");
 }
 
 .jumboGaleria {
-  background-image: url(../images/Jumbotron/Galeria.jpg);
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 0;
-  min-height: 500px;
-  padding-top: 200px;
+  background-image: url("../images/Jumbotron/Galeria.jpg");
 }
 
+/* Fin EACH */
 .carousel {
   margin: auto;
   padding-top: 30px;
@@ -249,7 +253,6 @@ h3, h4 {
 
 /* FIN CONTACTO */
 /* FOOTER */
-/* Gradiente en footer */
 .footer {
   background: linear-gradient(90deg, #434343 0%, #006e77 100%);
   color: white;
@@ -284,14 +287,13 @@ h3, h4 {
 /* BOTONES */
 .boton {
   color: rgb(255, 255, 255);
-  background-color: rgb(55, 55, 55);
+  background-color: #373737;
   padding: 10px 20px;
   margin-left: 10px;
   margin-bottom: 10px;
   border: 1px solid rgb(55, 55, 55);
   border-radius: 30px;
 }
-
 .boton:hover {
-  background-color: rgb(117, 172, 236);
+  background-color: #75acec;
 }/*# sourceMappingURL=styles.css.map */
