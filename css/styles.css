@@ -20,11 +20,11 @@ body {
 }
 
 h2 {
-  color: #ff0000;
+  color: #005500;
   font-weight: bold;
   font-size: 30px;
   padding: 10px;
-  text-shadow: 1px 1px #ffffff;
+  text-shadow: 1px 1px 2px white, 0 0 25px turquoise, 0 0 5px darkblue;
   font-family: "Kaushan Script", cursive;
   text-align: center;
 }
@@ -33,14 +33,14 @@ h3,
 h4 {
   color: #000000;
   padding: 10px;
-  text-shadow: 1px 1px #ffffff;
+  text-shadow: 1px 1px 2px white, 0 0 25px turquoise, 0 0 5px darkblue;
   font-family: "Kaushan Script", cursive;
 }
 
 /* Importacion de archivos */
 /* HEADER */
 .header {
-  background: linear-gradient(90deg, rgba(248, 180, 8, 0.6901960784) 0%, #7dae36 100%);
+  background: linear-gradient(90deg, rgba(248, 180, 8, 0.6901960784) 0%, rgba(248, 180, 8, 0.6901960784) 30%, #40e0d0 100%);
 }
 .header .container-fluid {
   align-items: center;
@@ -50,7 +50,7 @@ h4 {
 .header .container-fluid h1 {
   font-size: 35px;
   font-weight: bold;
-  text-shadow: 1px 1px #ffffff;
+  text-shadow: 1px 1px 2px white, 0 0 25px turquoise, 0 0 5px darkblue;
   font-family: "Kaushan Script", cursive;
   margin: 0;
 }
@@ -68,9 +68,11 @@ h4 {
 }
 
 /* FIN NAVBAR */
+/* MIXING - Estilos de listas */
+/* FIN MIXING */
 /* MAIN */
 .principal {
-  background-image: url(../images/Praias/white-g1dc2efb8f_1920.jpg);
+  background-image: url("../images/praias/white-g1dc2efb8f_1920.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -81,7 +83,7 @@ h4 {
 .principal .articulo img {
   width: 90%;
   border-radius: 20px;
-  border: 2px solid rgb(87, 85, 85);
+  box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
 }
 .principal .articulo p {
   font-style: italic;
@@ -93,6 +95,7 @@ h4 {
   height: auto;
   border-radius: 20px;
   margin-bottom: 20px;
+  box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
 }
 
 /* FIN MAIN */
@@ -110,14 +113,50 @@ h4 {
 .quartos .carta ul {
   list-style-type: none;
   font-style: italic !important;
+  text-align: left;
+  list-style-image: none;
   -webkit-padding-start: 10px;
           padding-inline-start: 10px;
 }
 
+/* Inicio Mapa de Quartos */
+/* Bucle para usar los valores del mapa */
+.quartos .carta .card-img-quarto1 {
+  content: url("../images/quartos/manga.jpg");
+  box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
+}
+
+.quartos .carta .card-img-quarto2 {
+  content: url("../images/quartos/abacaxi.jpg");
+  box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
+}
+
+.quartos .carta .card-img-quarto3 {
+  content: url("../images/quartos/caju.jpg");
+  box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
+}
+
+.quartos .carta .card-img-quarto4 {
+  content: url("../images/quartos/acai.jpg");
+  box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
+}
+
+.quartos .carta .card-img-quarto5 {
+  content: url("../images/quartos/coco.jpg");
+  box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
+}
+
+.quartos .carta .card-img-quarto6 {
+  content: url("../images/quartos/mamao.jpg");
+  box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
+}
+
+/* Fin Mapa de Quartos */
 .servicios ul {
   list-style-type: none;
-  list-style-image: url("../images/icons8-ok-16.png");
+  font-style: normal !important;
   text-align: left;
+  list-style-image: url("../images/icons8-ok-16.png");
   padding-left: 40px;
   padding-bottom: 40px;
 }
@@ -130,20 +169,21 @@ h4 {
 
 .jumboGaleria,
 .jumboQuartos {
-  margin-bottom: 0;
-  min-height: 500px;
-  padding-top: 200px;
+  margin: 0;
+  padding: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  opacity: 0.9;
 }
 
 /* EACH para imagenes de Jumbotron */
 .jumboQuartos {
-  background-image: url("../images/Jumbotron/Quartos.jpg");
+  background-image: url("../images/jumbotron/Quartos.jpg");
 }
 
 .jumboGaleria {
-  background-image: url("../images/Jumbotron/Galeria.jpg");
+  background-image: url("../images/jumbotron/Galeria.jpg");
 }
 
 /* Fin EACH */
@@ -173,6 +213,25 @@ h4 {
   opacity: 0.9;
 }
 
+/* Inicio Mapa de Playas */
+/* Bucle para usar los valores del mapa */
+.playas .card .card-img-playa1 {
+  content: url("../images/praias/minas.jpg");
+}
+
+.playas .card .card-img-playa2 {
+  content: url("../images/praias/amor.jpg");
+}
+
+.playas .card .card-img-playa3 {
+  content: url("../images/praias/centro.jpg");
+}
+
+.playas .card .card-img-playa4 {
+  content: url("../images/praias/madeiro.jpg");
+}
+
+/* Fin Mapa de Quartos */
 .actividades {
   text-align: center;
 }
@@ -181,6 +240,7 @@ h4 {
   height: 500px;
   border-radius: 20px;
   margin-bottom: 20px;
+  box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
 }
 
 /* LOCALIZACION */
@@ -207,8 +267,9 @@ h4 {
 }
 .llegar ul {
   list-style-type: none;
-  list-style-image: url("../images/icons8-where-48.png");
+  font-style: normal !important;
   text-align: left;
+  list-style-image: url("../images/icons8-where-48.png");
   padding-left: 70px;
   padding-bottom: 40px;
 }
@@ -217,29 +278,6 @@ h4 {
   color: rgb(55, 55, 55);
 }
 
-@-webkit-keyframes titilar {
-  0% {
-    opacity: 0.1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes titilar {
-  0% {
-    opacity: 0.1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /* FIN LOCALIZACION */
 /* CONTACTO */
 .contacto .mail p {
@@ -254,7 +292,7 @@ h4 {
 /* FIN CONTACTO */
 /* FOOTER */
 .footer {
-  background: linear-gradient(90deg, #434343 0%, #006e77 100%);
+  background: linear-gradient(90deg, #434343 0%, #434343 30%, #00ced1 100%);
   color: white;
   font-size: 14px;
   padding: 5px;
@@ -285,7 +323,7 @@ h4 {
 
 /* FIN FOOTER */
 /* BOTONES */
-.boton {
+.boton, .botonReserva {
   color: rgb(255, 255, 255);
   background-color: #373737;
   padding: 10px 20px;
@@ -294,6 +332,44 @@ h4 {
   border: 1px solid rgb(55, 55, 55);
   border-radius: 30px;
 }
-.boton:hover {
+.boton:hover, .botonReserva:hover {
   background-color: #75acec;
+}
+
+/* Uso de EXTEND - Extiende las caracteristicas de los botones */
+.botonReserva {
+  -webkit-animation-name: titilar;
+          animation-name: titilar;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  box-shadow: 1px 1px 2px black, 0 0 25px turquoise, 0 0 5px darkturquoise;
+}
+
+/* FIN BOTONES */
+/* Animaciones Titilar */
+@-webkit-keyframes titilar {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes titilar {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */
