@@ -72,7 +72,7 @@ h4 {
 /* FIN MIXING */
 /* MAIN */
 .principal {
-  background-image: url("../images/praias/white-g1dc2efb8f_1920.jpg");
+  background-image: url("../images/praias/fondo.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -168,7 +168,8 @@ h4 {
 }
 
 .jumboGaleria,
-.jumboQuartos {
+.jumboQuartos,
+.jumboPraias {
   margin: 0;
   padding: 100px;
   background-position: center center;
@@ -184,6 +185,10 @@ h4 {
 
 .jumboGaleria {
   background-image: url("../images/jumbotron/Galeria.jpg");
+}
+
+.jumboPraias {
+  background-image: url("../images/jumbotron/Praias.jpg");
 }
 
 /* Fin EACH */
@@ -204,6 +209,9 @@ h4 {
 
 /* FIN GALERIA */
 /* PLAYAS Y ACTIVIDADES */
+.playas {
+  margin-top: 40px;
+}
 .playas .card {
   margin-bottom: 10px;
   border-radius: 15px;

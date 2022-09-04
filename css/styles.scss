@@ -72,7 +72,7 @@ h4 {
 
 /* MAIN */
 .principal {
-    background-image: url("../images/praias/white-g1dc2efb8f_1920.jpg");
+    background-image: url("../images/praias/fondo.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -161,7 +161,8 @@ $qNombre in $quartos {
 }
 
 .jumboGaleria,
-.jumboQuartos {
+.jumboQuartos,
+.jumboPraias{
     margin: 0;
     padding: 100px;
     background-position: center center;
@@ -171,8 +172,7 @@ $qNombre in $quartos {
 }
 
 /* EACH para imagenes de Jumbotron */
-@each $seccion in Quartos,
-Galeria {
+@each $seccion in Quartos, Galeria, Praias {
     .jumbo#{$seccion} {
         background-image: url("../images/jumbotron/#{$seccion}.jpg");
     }
@@ -199,13 +199,17 @@ Galeria {
 /* FIN GALERIA */
 
 /* PLAYAS Y ACTIVIDADES */
-.playas .card {
-    margin-bottom: 10px;
-    border-radius: 15px;
+.playas {
+    margin-top: 40px;
 
-    .card-img-top {
-        border-radius: 0;
-        opacity: 0.9;
+    .card {
+        margin-bottom: 10px;
+        border-radius: 15px;
+
+        .card-img-top {
+            border-radius: 0;
+            opacity: 0.9;
+        }
     }
 }
 
