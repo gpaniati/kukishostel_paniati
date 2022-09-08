@@ -66,6 +66,9 @@ h4 {
 .bgnav .nav-link {
   color: #ffffff !important;
 }
+.bgnav .nav-link:hover {
+  background-color: #75acec;
+}
 
 /* FIN NAVBAR */
 /* MIXING - Estilos de listas */
@@ -203,7 +206,7 @@ h4 {
 }
 .carousel .carousel-item img {
   width: 100%;
-  height: 400%;
+  height: 300%;
   border-radius: 30px;
 }
 

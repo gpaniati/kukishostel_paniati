@@ -3,6 +3,9 @@
     background-color: $bColorNavBar;
     .nav-link{
         color: $bColorLink !important;
+        &:hover {
+            background-color: $botonColorHover;
+        }
     }
 }
 /* FIN NAVBAR */
