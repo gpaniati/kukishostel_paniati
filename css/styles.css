@@ -72,7 +72,7 @@ h4 {
 /* FIN MIXING */
 /* MAIN */
 .principal {
-  background-image: url("../images/praias/fondo.jpg");
+  background-image: url("../images/praias/fondo.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -122,32 +122,32 @@ h4 {
 /* Inicio Mapa de Quartos */
 /* Bucle para usar los valores del mapa */
 .quartos .carta .card-img-quarto1 {
-  content: url("../images/quartos/manga.jpg");
+  content: url("../images/quartos/manga.webp");
   box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
 }
 
 .quartos .carta .card-img-quarto2 {
-  content: url("../images/quartos/abacaxi.jpg");
+  content: url("../images/quartos/abacaxi.webp");
   box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
 }
 
 .quartos .carta .card-img-quarto3 {
-  content: url("../images/quartos/caju.jpg");
+  content: url("../images/quartos/caju.webp");
   box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
 }
 
 .quartos .carta .card-img-quarto4 {
-  content: url("../images/quartos/acai.jpg");
+  content: url("../images/quartos/acai.webp");
   box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
 }
 
 .quartos .carta .card-img-quarto5 {
-  content: url("../images/quartos/coco.jpg");
+  content: url("../images/quartos/coco.webp");
   box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
 }
 
 .quartos .carta .card-img-quarto6 {
-  content: url("../images/quartos/mamao.jpg");
+  content: url("../images/quartos/mamao.webp");
   box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
 }
 
@@ -224,19 +224,19 @@ h4 {
 /* Inicio Mapa de Playas */
 /* Bucle para usar los valores del mapa */
 .playas .card .card-img-playa1 {
-  content: url("../images/praias/minas.jpg");
+  content: url("../images/praias/minas.webp");
 }
 
 .playas .card .card-img-playa2 {
-  content: url("../images/praias/amor.jpg");
+  content: url("../images/praias/amor.webp");
 }
 
 .playas .card .card-img-playa3 {
-  content: url("../images/praias/centro.jpg");
+  content: url("../images/praias/centro.webp");
 }
 
 .playas .card .card-img-playa4 {
-  content: url("../images/praias/madeiro.jpg");
+  content: url("../images/praias/madeiro.webp");
 }
 
 /* Fin Mapa de Quartos */
