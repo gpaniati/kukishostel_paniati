@@ -71,6 +71,12 @@ h4 {
 /* FIN MIXING */
 
 /* MAIN */
+.jumboIndex{
+    opacity: 0,5;
+    p{
+        color: #ffffff;
+    }
+}
 .principal {
     background-image: url("../images/praias/fondo.webp");
     background-size: cover;
@@ -172,7 +178,7 @@ $qNombre in $quartos {
 }
 
 /* EACH para imagenes de Jumbotron */
-@each $seccion in Quartos, Galeria, Praias {
+@each $seccion in Index, Quartos, Galeria, Praias {
     .jumbo#{$seccion} {
         background-image: url("../images/jumbotron/#{$seccion}.jpg");
     }

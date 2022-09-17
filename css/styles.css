@@ -74,6 +74,13 @@ h4 {
 /* MIXING - Estilos de listas */
 /* FIN MIXING */
 /* MAIN */
+.jumboIndex {
+  opacity: 0, 5;
+}
+.jumboIndex p {
+  color: #ffffff;
+}
+
 .principal {
   background-image: url("../images/praias/fondo.webp");
   background-size: cover;
@@ -182,6 +189,10 @@ h4 {
 }
 
 /* EACH para imagenes de Jumbotron */
+.jumboIndex {
+  background-image: url("../images/jumbotron/Index.jpg");
+}
+
 .jumboQuartos {
   background-image: url("../images/jumbotron/Quartos.jpg");
 }
