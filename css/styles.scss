@@ -76,7 +76,10 @@ h4 {
     font-size: 50px;
 }
 
-.jumboIndex {
+.jumboIndex,
+.jumboGaleria,
+.jumboQuartos,
+.jumboPraias {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,16 +103,6 @@ h4 {
     font-size: 18px;
 }
 
-.jumboGaleria,
-.jumboQuartos,
-.jumboPraias {
-    @extend .jumboIndex;
-    margin: 0;
-    padding: 100px;
-}
-
-/* FIN JumboTrons */
-
 /* EACH para imagenes de Jumbotron */
 @each $seccion in Index,
 Quartos,
@@ -122,6 +115,8 @@ Praias {
 }
 
 /* Fin EACH */
+
+/* FIN JumboTrons */
 
 /* MAIN */
 .principal {
@@ -221,6 +216,7 @@ $qNombre in $quartos {
 /* FIN QUARTOS/SERVICIOS */
 
 /* GALERIA */
+/* CAROUSEL */
 .carousel {
     margin: auto;
     padding-top: 30px;
@@ -234,6 +230,108 @@ $qNombre in $quartos {
             height: 300%;
             border-radius: 30px;
         }
+    }
+}
+
+/* GALERIA CON GRIDS */
+.galeriaGrids {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 300px);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.foto {
+    width: 100%;
+    box-shadow: 0px 0px 42px -3px rgba(0,0,0,0.54);
+    border-radius: 30px;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+    transition: all 0.8s;
+}
+
+/* EACH para imagenes de Galeria GRIDS*/
+@each $foto in 1,
+2,
+3,
+4,
+5,
+6,
+7,
+8 {
+    .fotoGaleria#{$foto} {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/galeriaGrids/foto#{$foto}.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Fin EACH */
+
+/* Media Querys - Galeria */
+@media only screen and (min-width:480px) {
+    .galeriaGrids {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 300px);
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .galeriaGrids {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 300px);
+    }
+
+    .fotoGaleria1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .fotoGaleria2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .fotoGaleria3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .fotoGaleria4 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .fotoGaleria5 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .fotoGaleria6 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .fotoGaleria7 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .fotoGaleria8 {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .galeriaGrids {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px 300px;
     }
 }
 
@@ -338,9 +436,6 @@ $qNombre in $playas {
     }
 
 }
-
-
-
 /* FIN LOCALIZACION */
 
 /* CONTACTO */
