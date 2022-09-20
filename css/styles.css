@@ -62,7 +62,7 @@ h4 {
 /* NAVBAR */
 .bgnav {
   background-color: #434343;
-  padding: 0;
+  padding: 2px;
   padding-left: 16px;
 }
 .bgnav .nav-link {
@@ -77,6 +77,7 @@ h4 {
 /* FIN MIXING */
 /* INICIO JumboTrons */
 .jumbotron h2 {
+  text-align: center;
   font-size: 50px;
 }
 
