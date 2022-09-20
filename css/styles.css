@@ -62,6 +62,8 @@ h4 {
 /* NAVBAR */
 .bgnav {
   background-color: #434343;
+  padding: 0;
+  padding-left: 16px;
 }
 .bgnav .nav-link {
   color: #ffffff !important;
@@ -73,39 +75,102 @@ h4 {
 /* FIN NAVBAR */
 /* MIXING - Estilos de listas */
 /* FIN MIXING */
-/* MAIN */
-.jumboIndex {
-  opacity: 0, 5;
-}
-.jumboIndex p {
-  color: #ffffff;
+/* INICIO JumboTrons */
+.jumbotron h2 {
+  font-size: 50px;
 }
 
+.jumboIndex, .jumboGaleria,
+.jumboQuartos,
+.jumboPraias {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+.jumboIndex p, .jumboGaleria p,
+.jumboQuartos p,
+.jumboPraias p {
+  color: #ffffff;
+}
+.jumboIndex .boton, .jumboIndex .botonReserva, .jumboGaleria .boton, .jumboGaleria .botonReserva,
+.jumboQuartos .boton,
+.jumboQuartos .botonReserva,
+.jumboPraias .boton,
+.jumboPraias .botonReserva {
+  margin-left: 0px;
+}
+
+#titleBemvinda {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#textBemvinda {
+  font-size: 18px;
+}
+
+.jumboGaleria,
+.jumboQuartos,
+.jumboPraias {
+  margin: 0;
+  padding: 100px;
+}
+
+/* FIN JumboTrons */
+/* EACH para imagenes de Jumbotron */
+.jumboIndex, .jumboGaleria,
+.jumboQuartos,
+.jumboPraias {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/jumbotron/Index.jpg");
+}
+
+.jumboQuartos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/jumbotron/Quartos.jpg");
+}
+
+.jumboGaleria {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/jumbotron/Galeria.jpg");
+}
+
+.jumboPraias {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/jumbotron/Praias.jpg");
+}
+
+/* Fin EACH */
+/* MAIN */
 .principal {
   background-image: url("../images/praias/fondo.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
 }
-.principal .articulo {
+.principal .articulo1 {
+  background-image: url(../images/portadakukis.webp);
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+.principal .articulo2 h3 {
+  margin-top: 20px;
   text-align: center;
 }
-.principal .articulo img {
-  width: 90%;
-  border-radius: 20px;
-  box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
+.principal .articulo2 p {
+  padding: 5px;
 }
-.principal .articulo p {
-  font-style: italic;
-  text-align: justify;
-  padding: 10px 60px;
+.principal .articulo3 {
+  margin-top: 30px;
+  text-align: center;
 }
-.principal .articulo video {
-  width: 90%;
+.principal .articulo3 video {
+  width: 95%;
   height: auto;
   border-radius: 20px;
   margin-bottom: 20px;
   box-shadow: inset 1px 2px black, 0 0 25px rgb(90, 92, 91), 0 0 5px rgb(218, 218, 218);
+}
+.principal .articulo4 {
+  margin-top: 50px;
 }
 
 /* FIN MAIN */
@@ -173,39 +238,6 @@ h4 {
 
 /* FIN QUARTOS/SERVICIOS */
 /* GALERIA */
-.jumbotron h2 {
-  font-size: 50px;
-}
-
-.jumboGaleria,
-.jumboQuartos,
-.jumboPraias {
-  margin: 0;
-  padding: 100px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.9;
-}
-
-/* EACH para imagenes de Jumbotron */
-.jumboIndex {
-  background-image: url("../images/jumbotron/Index.jpg");
-}
-
-.jumboQuartos {
-  background-image: url("../images/jumbotron/Quartos.jpg");
-}
-
-.jumboGaleria {
-  background-image: url("../images/jumbotron/Galeria.jpg");
-}
-
-.jumboPraias {
-  background-image: url("../images/jumbotron/Praias.jpg");
-}
-
-/* Fin EACH */
 .carousel {
   margin: auto;
   padding-top: 30px;
@@ -253,7 +285,7 @@ h4 {
   content: url("../images/praias/madeiro.webp");
 }
 
-/* Fin Mapa de Quartos */
+/* Fin Mapa de Playas */
 .actividades {
   text-align: center;
 }
@@ -298,6 +330,21 @@ h4 {
 .llegar ul a {
   text-decoration: none;
   color: rgb(55, 55, 55);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white, 0 0 25px turquoise, 0 0 5px darkblue;
+}
+.llegar ul a:hover {
+  color: #005500;
+  text-shadow: 1px 1px 2px white, 0 0 25px turquoise, 0 0 5px darkblue;
+  font-weight: bold;
+  font-size: 20px;
+  transition-duration: 1s;
+}
+.llegar .card {
+  margin-right: 30px;
+  color: white;
+  font-style: italic;
+  background-color: #434343;
 }
 
 /* FIN LOCALIZACION */
@@ -394,4 +441,19 @@ h4 {
   100% {
     opacity: 1;
   }
+}
+/*WhatsApp*/
+img.btn-whatsapp {
+  display: block !important;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 100px !important;
+}
+img.btn-whatsapp:hover {
+  border-radius: 100px !important;
+  box-shadow: 0px 0px 15px 0px rgb(7, 94, 84);
+  transition-duration: 1s;
 }/*# sourceMappingURL=styles.css.map */

@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Keywords/Description Inicio -->
-    <meta name="description" content="A pousada está localizada a apenas 1,1 km da Playa do Amor e a 3 km da Praia do Madeiro. O centro da Praia de Pipa fica a menos de 1 km.">
+    <meta name="description"
+        content="A pousada está localizada a apenas 1,1 km da Playa do Amor e a 3 km da Praia do Madeiro. O centro da Praia de Pipa fica a menos de 1 km.">
     <meta name="keywords" content="hostel pipa, vem pra pipa, hostel pipa, localização, chegar pipa">
     <!-- Keywords/Description Fin -->
     <!-- Google Fonts -->
@@ -44,7 +45,7 @@
                     <a class="nav-link" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./acomodação.html">Acomodação</a>
+                    <a class="nav-link" href="./acomodacao.html">Acomodação</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./galeria.html">Galeria</a>
@@ -53,7 +54,7 @@
                     <a class="nav-link" href="./praiaseatividades.html">Praias e Atividades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./localização.html">Localização</a>
+                    <a class="nav-link" href="./localizacao.html">Localização</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./contacto.html">Contacto</a>
@@ -75,14 +76,51 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <a href="ancla"></a>
-        <!--Seccion de como llegar a pipa (Faltan enlaces con ejemplos)-->
+        <!--Seccion de como llegar a pipa-->
         <section class="llegar">
             <h2 class="comoLlegar">Como chegar a Pipa de ônibus</h2>
+
+            <!--Lista de opciones para llegar por bus -->
             <ul>
-                <li><a href="#ancla">Desde Natal</a></li>
-                <li><a href="#ancla">Desde João Pessoa</a></li>
-                <li><a href="#ancla">Desde Recife</a></li>
-                <li><a href="#ancla">Desde Fortaleza</a></li>
+                <li><a href="#ancla" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false"
+                        aria-controls="collapseExample">Desde Natal</a>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            Pegar ônibus da empresa Riograndense na Rodoviária de Natal até Pipa. Duração do
+                            recorrido 3hs aprox. Valor $18. (a passagem se compra acima do ônibus só com dinheiro)
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#ancla" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false"
+                        aria-controls="collapseExample">Desde João Pessoa</a>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            Pegar ônibus da empresa Viação Progresso na Rodoviária de João Pessoa Pessoa até
+                            Goianinha (o ônibus vai até Natal, mas você tem que pedir descer na BR 101 na entrada de
+                            Goianinha porque não existe rodoviária na cidade). Duração do recorrido 1hs 30min aprox.
+                            Valor a partir $40.
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#ancla" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false"
+                        aria-controls="collapseExample">Desde Recife</a>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            Pegar ônibus da empresa Viação Progresso na Rodoviária de Recife até Goianinha (o ônibus
+                            vai até Natal, mas você tem que pedir descer na BR 101 na entrada de Goianinha porque
+                            não existe rodoviária na cidade). Duração do recorrido 4hs 30min aprox. Valor a partir
+                            $102.
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#ancla" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false"
+                        aria-controls="collapseExample">Desde Fortaleza</a>
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                            Pegar ônibus da empresa Viação Nordeste ou Buser Rodoviária de Fortaleza até Natal.
+                            Duração do recorrido 8 a 9hs. Valor a partir $110.
+                        </div>
+                </li>
             </ul>
         </section>
     </main>
